@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" id="AnchorPane" prefHeight="493.0" prefWidth="745.0" styleClass=""
+            xmlns="http://javafx.com/javafx/8" fx:controller="">
+    <stylesheets>
+        <URL value="@style.css"/>
+    </stylesheets>
+    <children>
+        <LineChart fx:id="graph" layoutX="5.0" layoutY="6.0" prefHeight="456.0" prefWidth="586.0"
+                   title="Chart engine work curve" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0"
+                   AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+            <xAxis>
+                <NumberAxis label="Time (s)" lowerBound="0" tickUnit="1" upperBound="3" fx:id="xAxis"/>
+            </xAxis>
+            <yAxis>
+                <NumberAxis fx:id="" label="Newtons (N)" lowerBound="0" tickUnit="1" upperBound="3"/>
+            </yAxis>
+        </LineChart>
+    </children>
+
+</AnchorPane>

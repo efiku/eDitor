@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" id="AnchorPane" cacheShape="false" prefHeight="153.0" prefWidth="288.0"
+            xmlns="http://javafx.com/javafx/8" fx:controller="">
+    <children>
+        <Button fx:id="butOK" defaultButton="true" layoutX="40.0" layoutY="112.0" mnemonicParsing="false" onAction=""
+                prefHeight="25.0" prefWidth="83.0" text="Done"/>
+        <Button fx:id="butCancel" cancelButton="true" layoutX="159.0" layoutY="112.0" mnemonicParsing="false"
+                onAction="" prefHeight="25.0" prefWidth="83.0" text="Cancel"/>
+        <TextField fx:id="engineTime" layoutX="38.0" layoutY="55.0" prefHeight="25.0" prefWidth="87.0"/>
+        <TextField fx:id="engineThrust" layoutX="159.0" layoutY="55.0" prefHeight="25.0" prefWidth="83.0"/>
+        <Text layoutX="40.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Time" wrappingWidth="83.0"/>
+        <Text layoutX="159.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thrust (N)"/>
+    </children>
+</AnchorPane>
