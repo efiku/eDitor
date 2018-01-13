@@ -1,9 +1,6 @@
 package pl.edu.pk.student.editor.view;
 
 
-import java.net.URL;
-import java.util.ResourceBundle;
-
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Alert.AlertType;
@@ -14,6 +11,9 @@ import javafx.scene.control.TextField;
 import pl.edu.pk.student.editor.Main;
 import pl.edu.pk.student.editor.model.EngineMeasurement;
 
+import java.net.URL;
+import java.util.ResourceBundle;
+
 /**
  * FXML Controller class
  *
@@ -22,17 +22,7 @@ import pl.edu.pk.student.editor.model.EngineMeasurement;
 public class EngineOverviewController implements Initializable {
 
     /*
-    Table and columns
-    */
-    @FXML
-    private TableView<EngineMeasurement> enigneTable;
-    @FXML
-    private TableColumn<EngineMeasurement, String> timeColumn;
-    @FXML
-    private TableColumn<EngineMeasurement, String> thrustColumn;
-
-    /*
-    TextFields 
+    TextFields
     */
     @FXML
     public TextField engineMark;
@@ -48,8 +38,15 @@ public class EngineOverviewController implements Initializable {
     public TextField fuelMass;
     @FXML
     public TextField totalEngineMass;
-
-
+    /*
+    Table and columns
+    */
+    @FXML
+    private TableView<EngineMeasurement> enigneTable;
+    @FXML
+    private TableColumn<EngineMeasurement, String> timeColumn;
+    @FXML
+    private TableColumn<EngineMeasurement, String> thrustColumn;
     /*
      Buttons
      */

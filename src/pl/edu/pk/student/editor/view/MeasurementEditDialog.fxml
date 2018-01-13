@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.text.*?>
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-
-<AnchorPane id="AnchorPane" cacheShape="false" prefHeight="153.0" prefWidth="288.0" xmlns="http://javafx.com/javafx/8"
-            xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.edu.pk.student.editor.view.MeasurementEditDialogController">
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" id="AnchorPane" cacheShape="false" prefHeight="153.0" prefWidth="288.0"
+            xmlns="http://javafx.com/javafx/8"
+            fx:controller="pl.edu.pk.student.editor.view.MeasurementEditDialogController">
     <children>
         <Button fx:id="butOK" defaultButton="true" layoutX="40.0" layoutY="112.0" mnemonicParsing="false"
                 onAction="#handleOkClicked" prefHeight="25.0" prefWidth="83.0" text="Done"/>

@@ -1,12 +1,5 @@
 package pl.edu.pk.student.editor;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.util.prefs.Preferences;
-
 import javafx.application.Application;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -25,27 +18,23 @@ import pl.edu.pk.student.editor.view.EngineStatisticsController;
 import pl.edu.pk.student.editor.view.MeasurementEditDialogController;
 import pl.edu.pk.student.editor.view.RootLayoutController;
 
+import java.io.*;
+import java.util.prefs.Preferences;
+
 import static javafx.stage.StageStyle.DECORATED;
 
 
 public class Main extends Application {
 
-    public static void main(String[] args) {
-        launch(args);
-    }
-
-
+    public static String VERSION = "v1.0";
     private Stage primaryStage;
     private BorderPane rootLayout;
     private ObservableList<EngineMeasurement> engineMsData = FXCollections.observableArrayList();
-    public static String VERSION = "v1.0";
-
     /*
     *  File header  ; Name ; engid |  Eng Sett data.
     */
     private String motorHeader = "";
-
-    /* 
+    /*
     * I need to set this here because it's a feature !
     */
     private EngineOverviewController engineOvController;
@@ -54,6 +43,10 @@ public class Main extends Application {
      * default Constructor
      */
     public Main() {
+    }
+
+    public static void main(String[] args) {
+        launch(args);
     }
     
     
@@ -90,6 +83,19 @@ public class Main extends Application {
     }
 
     /**
+     * Set main motor header
+     *
+     * @param motorHeader the motorHeader to set
+     */
+    public void setMotorHeader(String motorHeader) {
+        this.motorHeader = motorHeader;
+    }
+
+    /*==============================================================*/
+    //                  SETTERS                                     
+    /*==============================================================*/
+
+    /**
      * Returns the Main file preference, i.e. the file that was last opened.
      * The preference is read from the OS specific registry. If no such
      * preference can be found, null is returned.
@@ -105,20 +111,6 @@ public class Main extends Application {
             return null;
         }
     }
-
-    /*==============================================================*/
-    //                  SETTERS                                     
-    /*==============================================================*/
-
-    /**
-     * Set main motor header
-     *
-     * @param motorHeader the motorHeader to set
-     */
-    public void setMotorHeader(String motorHeader) {
-        this.motorHeader = motorHeader;
-    }
-
 
     /**
      * Sets the file path of the currently loaded file. The path is persisted in
@@ -330,13 +322,13 @@ public class Main extends Application {
                     engineOvController.manufacturer.getText();
         } catch (Exception e) {
             generateExceptionDialog(AlertType.ERROR, "File save Error !", "Ooops! Empty fields in Motor settings?!\n", " Fix it!");
-            throw new Exception("Whoops! Empty string ! Fix It ! Line 319:320");
+            throw new Exception("Whoops! Empty string ! Fix It !");
         }   
             /*
             // Print data to file step by step
             */
         try (PrintWriter out = new PrintWriter(file)) {
-            out.println("; ENG-Editor by efik https://github.com/efik");
+            out.println("; ENG-Editor by efiku and endriu7  https://github.com/efiku https://github.com/endriu7");
             out.println(";" + engineOvController.engineMark.getText());
             out.println(this.motorHeader);
 
@@ -455,7 +447,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) {
         this.primaryStage = primaryStage;
-        this.primaryStage.setTitle("Engine Editor v0.1");
+        this.primaryStage.setTitle("eDitor (ENG-Engine Editor) v0.1");
 
         // Create root Layout
         initRootLayout();

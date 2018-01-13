@@ -1,13 +1,13 @@
 package pl.edu.pk.student.editor.view;
 
+import javafx.fxml.FXML;
+import javafx.stage.FileChooser;
+import pl.edu.pk.student.editor.Main;
+
 import java.io.File;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-
-import javafx.fxml.FXML;
-import javafx.stage.FileChooser;
-import pl.edu.pk.student.editor.Main;
 
 public class RootLayoutController {
 
