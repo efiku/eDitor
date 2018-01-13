@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="608.0" y="242.0">pl.edu.pk.student.editor.view.EngineOverviewController</node>
+    <node x="697.5250757575757" y="0.0">pl.edu.pk.student.editor.model.EngineMeasurement</node>
+    <node x="1204.0" y="342.5">pl.edu.pk.student.editor.view.RootLayoutController</node>
+    <node x="886.0" y="331.5">pl.edu.pk.student.editor.model.FileModel</node>
+    <node x="749.018409090909" y="594.0">pl.edu.pk.student.editor.Main</node>
+    <node x="279.0" y="298.0">pl.edu.pk.student.editor.view.MeasurementEditDialogController</node>
+    <node x="0.0" y="331.0">pl.edu.pk.student.editor.view.EngineStatisticsController</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="pl.edu.pk.student.editor.view.EngineOverviewController" target="pl.edu.pk.student.editor.Main">
+      <point x="86.0" y="126.0" />
+      <point x="823.0" y="514.0" />
+      <point x="923.6517424242423" y="514.0" />
+      <point x="-26.866666666666703" y="-192.0" />
+    </edge>
+    <edge source="pl.edu.pk.student.editor.view.EngineStatisticsController" target="pl.edu.pk.student.editor.model.EngineMeasurement">
+      <point x="0.0" y="-37.0" />
+      <point x="129.5" y="182.0" />
+      <point x="709.2068939393939" y="182.0" />
+      <point x="-116.81818181818181" y="81.0" />
+    </edge>
+    <edge source="pl.edu.pk.student.editor.Main" target="pl.edu.pk.student.editor.model.FileModel">
+      <point x="26.866666666666646" y="-192.0" />
+      <point x="977.3850757575757" y="514.0" />
+      <point x="1092.25" y="514.0" />
+      <point x="68.75" y="36.5" />
+    </edge>
+    <edge source="pl.edu.pk.student.editor.view.RootLayoutController" target="pl.edu.pk.student.editor.Main">
+      <point x="54.0" y="25.5" />
+      <point x="1339.0" y="574.0" />
+      <point x="1138.5850757575759" y="574.0" />
+      <point x="188.06666666666666" y="-192.0" />
+    </edge>
+    <edge source="pl.edu.pk.student.editor.view.EngineOverviewController" target="pl.edu.pk.student.editor.model.EngineMeasurement">
+      <point x="-86.0" y="-126.0" />
+      <point x="651.0" y="212.0" />
+      <point x="779.297803030303" y="212.0" />
+      <point x="-46.727272727272734" y="81.0" />
+    </edge>
+    <edge source="pl.edu.pk.student.editor.view.MeasurementEditDialogController" target="pl.edu.pk.student.editor.Main">
+      <point x="0.0" y="70.0" />
+      <point x="433.5" y="554.0" />
+      <point x="816.1850757575758" y="554.0" />
+      <point x="-134.33333333333337" y="-192.0" />
+    </edge>
+    <edge source="pl.edu.pk.student.editor.view.MeasurementEditDialogController" target="pl.edu.pk.student.editor.model.EngineMeasurement">
+      <point x="77.25" y="-70.0" />
+      <point x="510.75" y="202.0" />
+      <point x="755.9341666666667" y="202.0" />
+      <point x="-70.0909090909091" y="81.0" />
+    </edge>
+    <edge source="pl.edu.pk.student.editor.Main" target="pl.edu.pk.student.editor.view.RootLayoutController">
+      <point x="134.33333333333331" y="-192.0" />
+      <point x="1084.8517424242423" y="554.0" />
+      <point x="1231.0" y="554.0" />
+      <point x="-54.0" y="25.5" />
+    </edge>
+    <edge source="pl.edu.pk.student.editor.model.FileModel" target="pl.edu.pk.student.editor.model.EngineMeasurement">
+      <point x="68.75" y="-36.5" />
+      <point x="1092.25" y="212.0" />
+      <point x="872.7523484848484" y="212.0" />
+      <point x="46.72727272727275" y="81.0" />
+    </edge>
+    <edge source="pl.edu.pk.student.editor.Main" target="pl.edu.pk.student.editor.view.MeasurementEditDialogController">
+      <point x="-161.20000000000005" y="-192.0" />
+      <point x="789.318409090909" y="564.0" />
+      <point x="330.5" y="564.0" />
+      <point x="-103.0" y="70.0" />
+    </edge>
+    <edge source="pl.edu.pk.student.editor.Main" target="pl.edu.pk.student.editor.view.EngineStatisticsController">
+      <point x="-188.06666666666672" y="-192.0" />
+      <point x="762.4517424242424" y="574.0" />
+      <point x="129.5" y="574.0" />
+      <point x="0.0" y="37.0" />
+    </edge>
+    <edge source="pl.edu.pk.student.editor.Main" target="pl.edu.pk.student.editor.view.EngineOverviewController">
+      <point x="-80.60000000000002" y="-192.0" />
+      <point x="869.9184090909091" y="534.0" />
+      <point x="651.0" y="534.0" />
+      <point x="-86.0" y="126.0" />
+    </edge>
+    <edge source="pl.edu.pk.student.editor.Main" target="pl.edu.pk.student.editor.model.EngineMeasurement">
+      <point x="80.60000000000002" y="-192.0" />
+      <point x="1031.1184090909092" y="534.0" />
+      <point x="1182.5" y="534.0" />
+      <point x="1182.5" y="192.0" />
+      <point x="919.4796212121212" y="192.0" />
+      <point x="93.4545454545455" y="81.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.4353582554517134" x="793.6708407871197" y="749.1771019677996" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

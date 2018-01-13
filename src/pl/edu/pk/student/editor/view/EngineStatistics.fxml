@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.chart.LineChart?>
-<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
-<?import java.net.URL?>
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1" id="AnchorPane" prefHeight="493.0" prefWidth="745.0" styleClass=""
-            xmlns="http://javafx.com/javafx/8" fx:controller="">
+
+<AnchorPane id="AnchorPane" prefHeight="493.0" prefWidth="745.0" styleClass="mainFxmlClass"
+            xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="pl.edu.pk.student.editor.view.EngineStatisticsController">
     <stylesheets>
         <URL value="@style.css"/>
     </stylesheets>
@@ -17,7 +22,7 @@
                 <NumberAxis label="Time (s)" lowerBound="0" tickUnit="1" upperBound="3" fx:id="xAxis"/>
             </xAxis>
             <yAxis>
-                <NumberAxis fx:id="" label="Newtons (N)" lowerBound="0" tickUnit="1" upperBound="3"/>
+                <NumberAxis fx:id="yAxis" label="Newtons (N)" lowerBound="0" tickUnit="1" upperBound="3"/>
             </yAxis>
         </LineChart>
     </children>

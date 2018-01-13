@@ -1,15 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.embed.swing.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.*?>
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1" id="AnchorPane" onKeyTyped="" onMouseMoved="" prefHeight="474.0"
-            prefWidth="638.0" xmlns="http://javafx.com/javafx/8" fx:controller="">
+
+<AnchorPane id="AnchorPane" onKeyTyped="#EngineListener" onMouseMoved="#EngineListener" prefHeight="474.0"
+            prefWidth="638.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="pl.edu.pk.student.editor.view.EngineOverviewController">
     <children>
-        <Separator layoutX="194.0" layoutY="65.0" onKeyTyped="" onMouseMoved="" prefHeight="7.0" prefWidth="406.0"
-                   AnchorPane.bottomAnchor="350.0" AnchorPane.leftAnchor="194.0" AnchorPane.rightAnchor="0.0"
-                   AnchorPane.topAnchor="65.0"/>
+        <Separator layoutX="194.0" layoutY="65.0" onKeyTyped="#EngineListener" onMouseMoved="#EngineListener"
+                   prefHeight="7.0" prefWidth="406.0" AnchorPane.bottomAnchor="350.0" AnchorPane.leftAnchor="194.0"
+                   AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="65.0"/>
         <TableView fx:id="enigneTable" layoutX="3.0" layoutY="2.0" prefHeight="467.0" prefWidth="230.0"
                    AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="405.0">
             <columns>
@@ -25,10 +36,12 @@
         </TableView>
         <HBox alignment="CENTER" layoutX="252.0" layoutY="407.0" prefHeight="33.0" prefWidth="374.0" spacing="10.0">
             <children>
-                <Button fx:id="buttonOK" defaultButton="true" mnemonicParsing="false" onAction="" prefHeight="25.0"
-                        prefWidth="184.0" text="Add Measurement"/>
-                <Button fx:id="buttonEdit" mnemonicParsing="false" onAction="" text="Edit"/>
-                <Button fx:id="buttonDelete" mnemonicParsing="false" onAction="" text="Delete"/>
+                <Button fx:id="buttonOK" defaultButton="true" mnemonicParsing="false"
+                        onAction="#hadnleAddEngineMeasurement" prefHeight="25.0" prefWidth="184.0"
+                        text="Add Measurement"/>
+                <Button fx:id="buttonEdit" mnemonicParsing="false" onAction="#handleEditEngineMeasurement" text="Edit"/>
+                <Button fx:id="buttonDelete" mnemonicParsing="false" onAction="#handleDeleteEngineMeasurement"
+                        text="Delete"/>
             </children>
         </HBox>
         <GridPane layoutX="259.0" layoutY="124.0" prefHeight="257.0" prefWidth="341.0">
@@ -69,7 +82,7 @@
         <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="330.0" layoutY="14.0" pickOnBounds="true"
                    preserveRatio="true">
             <image>
-                <Image url=""/>
+                <Image url="@../img/logo.png"/>
             </image>
         </ImageView>
     </children>
