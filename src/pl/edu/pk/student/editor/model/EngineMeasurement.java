@@ -2,7 +2,11 @@ package pl.edu.pk.student.editor.model;
 
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
-
+/**
+ * FXML Controller class
+ * @author efiku Krzysztof Pazdur
+ * @author entriu7 Andrzej Mycek
+ */
 public class EngineMeasurement {
     private final StringProperty time;
     private final StringProperty thrust;

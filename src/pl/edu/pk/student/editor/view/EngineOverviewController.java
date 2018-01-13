@@ -16,8 +16,8 @@ import java.util.ResourceBundle;
 
 /**
  * FXML Controller class
- *
- * @author Krzysztof Pazdur
+ * @author efiku Krzysztof Pazdur
+ * @author entriu7 Andrzej Mycek
  */
 public class EngineOverviewController implements Initializable {
 

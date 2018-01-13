@@ -9,6 +9,11 @@ import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+/**
+ * FXML Controller class
+ * @author efiku Krzysztof Pazdur
+ * @author entriu7 Andrzej Mycek
+ */
 public class RootLayoutController {
 
     // Reference to the main application

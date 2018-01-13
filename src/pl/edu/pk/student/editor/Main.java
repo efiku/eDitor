@@ -24,6 +24,10 @@ import java.util.prefs.Preferences;
 import static javafx.stage.StageStyle.DECORATED;
 
 
+/**
+ * @author efiku Krzysztof Pazdur
+ * @author entriu7 Andrzej Mycek
+ */
 public class Main extends Application {
 
     public static String VERSION = "v1.0";
@@ -164,7 +168,6 @@ public class Main extends Application {
             e.printStackTrace();
         }
 
-        // Try to load last opened person file.
 
     }
 
@@ -187,7 +190,6 @@ public class Main extends Application {
             engineOvController.setMain(this);
             
             
-            /**/
 
             File file = getEngineFilePath();
             if (file != null) {

@@ -14,8 +14,8 @@ import java.util.ResourceBundle;
 
 /**
  * FXML Controller class
- *
- * @author efik
+ * @author efiku Krzysztof Pazdur
+ * @author entriu7 Andrzej Mycek
  */
 public class EngineStatisticsController implements Initializable {
 

@@ -8,7 +8,11 @@ import javafx.stage.Stage;
 import pl.edu.pk.student.editor.Main;
 import pl.edu.pk.student.editor.model.EngineMeasurement;
 
-
+/**
+ * FXML Controller class
+ * @author efiku Krzysztof Pazdur
+ * @author entriu7 Andrzej Mycek
+ */
 public class MeasurementEditDialogController {
 
     @FXML
